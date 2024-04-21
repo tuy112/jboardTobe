@@ -1,0 +1,204 @@
+.App {
+  position: relative;
+  display: flex;
+}
+
+
+/* header */
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+#header .logo {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+#header .logo .logoLink {
+  color: #111;
+  font-weight: 600;
+  font-size: 20px;
+}
+#header .nav {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+#header .nav .gnb .gnbItem {
+  float: left;
+  margin-left: 20px;
+}
+#header .search {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#header .search .searchBox {
+  width: 180px;
+  height: 28px;
+  margin-right: 5px;
+
+}
+#header .search .searchBtn {
+  width: 70px;
+  height: 35px;
+  background: tomato;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: none;
+}
+#header .search .searchBtn:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+
+/* main - board */
+.main {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #ededed;
+}
+.work {}
+.work.w1 {}
+.work.w1 h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.work.w1 .board {
+  border: 2px solid #333;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px #777;
+}
+.board th,
+.board td {
+  border: 1px solid #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* main - pagination */
+.work.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+.paginationPages {
+  padding: 20px;
+}
+.paginationPages li {
+  display: inline-block;
+}
+.paginationPages li a {
+  display: block;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  margin: 3px;
+  box-shadow: 0 5px 10px #f1f1f1;
+}
+.paginationPages li a.active {
+  background-color: rgb(252,212,205);
+}
+.paginationPages li a:active {
+  background-color: #999;
+}
+
+.openModalBtn {
+  position: absolute;
+  left: 60%;
+  background-color: tomato;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.openModalBtn:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.work.pagination {}
+
+.work.control {}
+
+/* footer */
+#footer {
+  position: fixed;
+  bottom: 0;
+}
+#footer h4 {
+  color: #fff;
+  text-align: center;
+}
+
+
+/* modal */
+.modal{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color: rgba(0,0,0,0.4);
+
+  display:none;
+}
+.modalBody {
+  position:absolute;
+  top:50%;
+  left: 20%;
+  width:500px;
+  height:600px;
+  padding:40px;
+  text-align: center;
+  background-color: rgb(255,255,255);
+  border-radius:10px;
+  box-shadow:0 2px 3px 0 rgba(34,36,38,0.15);
+  transform:translateY(-50%);
+
+  display: none;
+}
+.postBtn {
+  margin-top: 200px;
+  background-color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.postBtn:hover {
+  background-color: #111;
+  color: #fff;
+}
+/* 닫기 버튼 */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width:50px;height:50px;
+  text-align:center;
+  margin-right:20px;
+  cursor: pointer;
+}
+.close:after {
+  content: "\00d7"; 
+  font-size:25pt;
+  line-height:45px;
+}
