@@ -9,7 +9,7 @@ function Home() {
   
 
   useEffect(() => {
-    // 1. postBoard
+    // 1. postBoard (글쓰기 버튼)
     function postBoard() {
       const modal = document.querySelector('.modal');
       const modalBody = document.querySelector('.modalBody');
@@ -27,10 +27,7 @@ function Home() {
         modalBody.style.display="none";
     });
     }
-    return () => {
-      // 실행
-      postBoard();
-    };
+    postBoard();
   }, []);
 
     return (
