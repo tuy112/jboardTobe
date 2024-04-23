@@ -32,9 +32,13 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 	cursor: default;
 }
-h1, h2 {
-    font-weight: 600;
-    font-size: 25px;
+h1 {
+	font-weight: 600;
+    font-size: 30px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 20px;
 }
 a, button, .btn {
 	line-height: 1.6;
